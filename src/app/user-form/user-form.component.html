@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Create User</h2>
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required [(ngModel)]="user.name" name="name" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required [(ngModel)]="user.email" name="email" class="form-control" />
+      </div>
+      <button type="submit" [disabled]="!userForm.valid">Submit</button>
+    </form>
+  </div>
+  

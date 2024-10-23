@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h2 class="mb-4 text-center">User List</h2>
+  <ul class="list-group">
+    <li
+      *ngFor="let user of users"
+      class="list-group-item d-flex justify-content-between align-items-center"
+    >
+      <span class="badge custom-badge">{{ user.name }}</span>
+      <span class="badge custom-badge rounded-pill">{{ user.email }}</span>
+    </li>
+  </ul>
+</div>
